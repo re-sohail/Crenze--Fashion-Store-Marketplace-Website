@@ -1,0 +1,512 @@
+@font-face {
+    font-family: "Vanchrome";
+    src: url("fonts/vanchrome.otf");
+    src: url("fonts/vanchrome.otf") format("otf");
+}
+@font-face {
+    font-family: "Dharma";
+    src: url("fonts/Dharma-Bold.otf");
+    src: url("fonts/Dharma-Bold.otf") format("otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.left-part h1{
+    font-family: "Dharma";
+    font-size: 45px;
+    font-weight: 400;
+}
+.center-part ul li{
+    display: inline-block;
+    align-items: center;
+    margin: 30px;
+}
+.center-part ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Dharma";
+    font-size: 25px;
+    font-weight: 300;
+}
+.right-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    border-radius: 10px;
+    background: #EBEBEB;
+    font-family: "Dharma";
+    margin-right: 15px;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Dharma";
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: -20px;
+}
+.search>i{
+    margin-right: -20px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon img{
+    margin: 10px
+}
+.user{
+    width: 25px;
+}
+.Crenze-heading{
+    display: flex;
+    align-items: center;
+}
+.Crenze-heading h1{
+    margin: 30px 30px;
+    font-size: 280px;
+    font-family: "Dharma";
+    font-weight: 400;
+    line-height: 180px;
+    word-spacing: -10px;
+    text-transform: uppercase;
+}
+.for-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.play-btn{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 230px;
+    z-index: 9999999;
+    margin-top: -10px;
+}
+.play-img{
+    width: 100%;
+    margin-top: -25px;
+}
+.play-img-box{
+    position: relative;
+    width: 330px;
+    height: 200px;
+}
+.play-img-box h1{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #EBEBEB;
+    font-size: 180px;
+    margin: 0;
+}
+.cirle-box{
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    width: 210px;
+    height: 210px;
+    background: #000;
+    border-radius: 50%;
+    margin-top: -25px;
+    position: relative;
+}
+.circle>h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Dharma";
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #EBEBEB;
+}
+.text{
+    position: relative;
+}
+.text span{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform-origin: 0 100px;
+    font-size: 25px; 
+}
+.text p{
+    color: #EBEBEB;
+    font-family: "Dharma";
+}
+.circle:hover{
+    animation: anim 20s linear infinite;
+}
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.stylish-img{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.img1{
+    width: 53%;
+    height: 100%;
+    background-image: url("img/image1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+.img1 h2, .img2 h2{
+    font-family: "Vanchrome";
+    font-size: 50px;
+    font-weight: 400;
+    color: #EBEBEB;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+.img2{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url("img/image2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+    position: relative;
+}
+.second-heading{
+    width: 100%;
+    height: 40vh;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.second-heading h1{
+    font-family: "Dharma";
+    font-size: 190px;
+    line-height: 160px;
+    text-align: center;
+    padding-top: 60px;
+    text-transform: uppercase;
+}
+.category-btn{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: -20px;
+}
+.category-btn button{
+    margin: 20px;
+    font-family: "Dharma";
+    font-size: 40px;
+    font-weight: 500;
+    padding: 15px 40px;
+    border: 4px solid #030303;
+    border-radius: 25px;
+    background: transparent;
+    text-transform: uppercase;
+}
+.category-btn button:focus{
+    background-color: #030303;
+    color: #EBEBEB;
+}
+.category-product{
+    width: 95%;
+    height: 150vh;
+    max-width: 95%;
+    /* background: #cd5858; */
+    margin: 10px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product1{
+    width: calc(25% - 20px);
+    height: 500px;
+    margin-top: 60px;
+    font-family: "Dharma";
+    position: relative;
+    /* background: #491818; */
+}
+.product1 h2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #030303;
+    color: #EBEBEB;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.product1 img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.product1 h3{
+    font-size: 25px;
+    margin: 0 10px;
+}
+.product1 h1{
+    font-size: 35px;
+    margin: 0 10px;
+}
+.product1 h4{
+    font-size: 25px;
+    margin: 0 10px;
+}
+.discount{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.how-much h4{
+    color: #333333;
+}
+.lin{
+    width: 55px;
+    height: 3px;
+    background: #030303;
+    position: absolute;
+    left: 77px;
+    top: 13px;
+}
+.third-heading h1{
+    font-size: 250px;
+    line-height: 200px;
+    height: 80vh;
+    width: 100%
+}
+.product-overview{
+    font-family: "Dharma";
+    width: 100%;
+    height: 50vh;
+    margin-top: 370px;
+    position: relative;
+    overflow: hidden;
+}
+.overview1{
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 700px;
+    height: 407px;
+    background-image: url('img/product-overview1.png');
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    margin-top: 205px;
+}
+.overview2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 650px;
+    height: 407px;
+    background-image: url('img/product-overview2.png');
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    margin-top: 205px;
+}
+.overview3{
+    position: absolute;
+    top: 0;
+    left: 96%;
+    /* right: -550px; */
+    width: 650px;
+    height: 407px;
+    background-image: url('img/product-overview3.png');
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    margin-top: 205px;
+    margin-left: 2px;
+}
+.overview1 h1, .overview2 h1, .overview3 h1{
+    font-size: 80px;
+    width: 50%;
+    line-height: 70px;
+    position: absolute;
+    top: 110px;
+    left: 30px;
+    text-transform: uppercase;
+    color: #EBEBEB;
+}
+.overview1, .overview2, .overview3{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Explore-btns{
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Explore-btns h1{
+    font-family: "Dharma";
+    font-size: 40px;
+    font-weight: 500;
+    padding: 15px 40px;
+    border: 4px solid #030303;
+    border-radius: 25px;
+    background: transparent;
+    text-transform: uppercase;
+    margin: 8px;
+}
+.Crenze-slider{
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/slider-pic.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 30px;
+}
+.Crenze-slider h1{
+    color: #EBEBEB;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Dharma";
+    text-transform: uppercase;
+    width: 45%;
+    line-height: 90px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Crenze-footer{
+    width: 100%;
+    height: 45vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Dharma";
+}
+.left-side-footer{
+    width: 40%;
+    height: 100%;
+    /* background: #5b1616; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left-side-footer h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.newsletter{
+    width: 370px;
+    height: 65px;
+    /* background: #08b38e; */
+    border-radius: 10px;
+    border: 3px solid silver;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+}
+.newsletter input{
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-family: "Dharma";
+    font-size: 25px;
+    color: #696969;
+    
+}
+.newsletter i{
+    position: absolute;
+    top: 30px;
+    right: -35px;
+    transform: translate(-50%, -50%);
+    font-family: "Dharma";
+    font-size: 30px;
+    background: #406269;
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+}
+.right-side-footer{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Services h1, .how-work h1{
+    margin-bottom: 30px;
+    color: #fff;
+}
+.Contact-us h1{
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.Services ul li a, .how-work ul li a, .Contact-us ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.Contact-us ul{
+    margin-bottom: 40px;
+}
+.Services ul li, .how-work ul li, .Contact-us ul li{
+    list-style-type: none;
+}
+
+
